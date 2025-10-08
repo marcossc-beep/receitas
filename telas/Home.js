@@ -7,7 +7,8 @@ export default function Home({navegar}) {
                 Bem vindo!
             </Text>
 
-            <TouchableOpacity style={styles.button} onPress={() => navegar('receitas')}>
+            <TouchableOpacity style={styles.button} 
+            onPress={() => navegar('receitas')}>
                 <Text style={styles.textButton}>Ver Receitas</Text>
             </TouchableOpacity>
         </View>
