@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
-export default function Home({navegar}) {
+export default function Home({navigation}) {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>
@@ -8,7 +8,7 @@ export default function Home({navegar}) {
             </Text>
 
             <TouchableOpacity style={styles.button} 
-            onPress={() => navegar('receitas')}>
+            onPress={() => navigation.navigate('Receitas')}>
                 <Text style={styles.textButton}>Ver Receitas</Text>
             </TouchableOpacity>
         </View>
